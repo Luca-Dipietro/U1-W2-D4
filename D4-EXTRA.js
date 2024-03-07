@@ -8,6 +8,22 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const checkArray = function (array) {
+  let string = "";
+  let sum = 0;
+  for (i = 0; i < array.length; i++) {
+    if (array[i] > 5) {
+      string += array[i] + " è maggiore di 5";
+      sum += array[i];
+    } else {
+      string += array[i] + " è minore o uguale a 5";
+    }
+    string += " ; ";
+  }
+  return string + sum + " è la somma di quelli maggiori di 5";
+};
+console.log(checkArray(giveMeRandom(4)));
+
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "shoppingCartTotal" che calcola il totale dovuto al negozio (tenendo conto delle quantità di ogni oggetto).
