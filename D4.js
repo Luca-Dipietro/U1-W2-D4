@@ -162,7 +162,7 @@ console.log(cutString("Epicode"));
 const giveMeRandom = function (n) {
   let arrayNumbers = [];
   for (let i = 0; i < n; i++) {
-    arrayNumbers.push(Math.floor(Math.random() * 10));
+    arrayNumbers.push(Math.floor(Math.random() * 11));
   }
   return arrayNumbers;
 };
